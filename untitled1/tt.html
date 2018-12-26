@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form表单示例</title>
+</head>
+<body>
+<form action="http://127.0.0.1:8000/upload/">
+    <p>
+        用户名： <input type="text">
+    </p>
+        <p>
+        密　码： <input type="password">
+    </p>
+
+
+        <p>性别:
+        <input name="gender" type="radio" value="1"> 男
+        <input name="gender" type="radio" value="0"> 女
+        <input checked name="gender" type="radio" value="2"> 保密
+    </p>
+        <p>爱好:
+    <input checked name="hobby" type="checkbox" value="basketball">篮球
+    <input name="hobby" type="checkbox" value="football">足球
+    <input checked name="hobby" type="checkbox" value="doublecolorball">双色球
+    </p>
+
+        <select name="from1" id="s1">
+        <option value="bj">北京</option>
+        <option value="sh" selected>上海</option>
+        <option value="sc">四川</option>
+    </select>
+
+        <select name="from1" id="s11" multiple>
+        <option value="bj">北京</option>
+        <option value="sh">上海</option>
+        <option value="sc">四川</option>
+    </select>
+        <p>头像:
+        <input name="lp" type="file">
+    </p>
+
+    <input type="submit">
+</form>
+</body>
+</html>
